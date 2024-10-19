@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BLOG</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="extra.css" />
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <!-- Large Screen Navbar -->
+    <header
+      id="navbar-lg"
+      class="hidden lg:block transform -translate-y-full fixed top-0 w-full bg-gray-800 z-50 transition-transform duration-500"
+    >
+      <nav class="w-full h-12 flex justify-between items-center">
+        <div>
+          <h1 id="Logo" class="text-white text-3xl p-4">
+            a<span class="text-red-600">v</span>o
+          </h1>
+        </div>
+        <div
+          id="navBarTool"
+          class="w-1/2 flex justify-evenly items-center overflow-hidden"
+        >
+          <a
+            href="index.html"
+            class="ml-5 text-gray-400 hover:text-red-500 font-light"
+            >HOME</a
+          >
+          <a
+            href="About.html"
+            class="ml-5 text-white hover:text-red-500 font-light"
+            >ABOUT</a
+          >
+          <a
+            href="work.html"
+            class="ml-5 text-gray-400 hover:text-red-500 font-light"
+            >WORK</a
+          >
+          <a href="blog.html" class="ml-5 text-red-500 font-light">BLOG</a>
+          <a
+            href="contact.html"
+            class="ml-5 text-gray-400 hover:text-red-500 font-light"
+            >CONTACT</a
+          >
+        </div>
+      </nav>
+    </header>
+    <!-- Small Screen Navbar -->
+    <header
+      id="navbar-sm"
+      class="lg:hidden transform -translate-y-full fixed top-0 w-full bg-gray-800 z-50 transition-transform duration-500"
+    >
+      <nav class="w-full bg-black h-16 flex justify-between items-center">
+        <h1 class="text-white text-3xl p-4">
+          a<span class="text-red-600">v</span>o
+        </h1>
+        <menu>
+          <div class="fixedMenu" id="fixedMenu">Menu</div>
+          <div class="fixedMenu-Content" id="fixedMenuContent">
+            <a
+              href="index.html"
+              class="ml-5 text-white hover:text-red-500 font-bold"
+              >Home</a
+            >
+            <a
+              href="About.html"
+              class="ml-5 text-white hover:text-red-500 font-bold"
+              >ABOUT</a
+            >
+            <a
+              href="work.html"
+              class="ml-5 text-white hover:text-red-500 font-bold"
+              >WORK</a
+            >
+            <a href="blog.html" class="ml-5 text-red-500 font-bold">BLOG</a>
+            <a
+              href="contact.html"
+              class="ml-5 text-white hover:text-red-500 font-bold"
+              >CONTACT</a
+            >
+          </div>
+        </menu>
+      </nav>
+    </header>
+
+    <!-- container 1 -->
+    <div
+      id="aboutCont"
+      class="w-full h-[90vh] bg-[url('images/tunnel1.jpg')] bg-cover bg-center bg-fixed overflow-hidden flex justify-center"
+    >
+      <div class="w-full h-full lg:w-4/5">
+        <!-- navbar for small screen-->
+        <div class="lg:hidden">
+          <nav class="w-full bg-black h-16 flex justify-between items-center">
+            <h1 class="text-white text-3xl p-4">
+              a<span class="text-red-600">v</span>o
+            </h1>
+            <menu>
+              <div class="menu" id="menu">Menu</div>
+              <div class="menu-content" id="menuContent">
+                <a
+                  href="index.html"
+                  class="ml-5 text-white hover:text-red-500 font-bold"
+                  >Home</a
+                >
+                <a
+                  href="About.html"
+                  class="ml-5 text-white hover:text-red-500 font-bold"
+                  >ABOUT</a
+                >
+                <a
+                  href="work.html"
+                  class="ml-5 text-white hover:text-red-500 font-bold"
+                  >WORK</a
+                >
+                <a href="blog.html" class="ml-5 text-red-500 font-bold">BLOG</a>
+                <a
+                  href="contact.html"
+                  class="ml-5 text-white hover:text-red-500 font-bold"
+                  >CONTACT</a
+                >
+              </div>
+            </menu>
+          </nav>
+        </div>
+        <!-- navbar for large screen -->
+        <div class="hidden lg:block mt-3">
+          <nav class="w-full h-12 flex justify-between items-center">
+            <div>
+              <h1 class="text-white text-3xl p-4">
+                a<span class="text-red-600">v</span>o
+              </h1>
+            </div>
+            <div class="w-1/2 flex justify-evenly items-center">
+              <a
+                href="index.html"
+                class="ml-5 text-gray-400 hover:text-red-500 font-light"
+                >HOME</a
+              >
+              <a
+                href="About.html"
+                class="ml-5 text-gray-400 hover:text-red-500 font-light"
+                >ABOUT</a
+              >
+              <a
+                href="work.html"
+                class="ml-5 text-gray-400 hover:text-red-500 font-light"
+                >WORK</a
+              >
+              <a href="blog.html" class="ml-5 text-red-500 font-light">BLOG</a>
+              <a
+                href="contact.html"
+                class="ml-5 text-gray-400 hover:text-red-500 font-light"
+                >CONTACT</a
+              >
+            </div>
+          </nav>
+        </div>
+
+        <!-- content -->
+        <div class="w-full h-[70%] flex-wrap flex items-end px-5">
+          <div>
+            <div class="flex">
+              <a href="index.html" class="hover:text-red-600"
+                >HOME<i class="fa-solid fa-angle-right text-red-600"></i
+              ></a>
+              <a href="#" class="ml-5"
+                >BLOG<i class="fa-solid fa-angle-right text-red-600"></i
+              ></a>
+            </div>
+            <div class="mt-6">
+              <h1 class="text-4xl font-extrabold text-white">BLOG</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- content of blog -->
+    <div class="w-full mt-40">
+      <nav class="w-full">
+        <h1 class="text-center text-xl lg:text-5xl font-bold">RECENT BLOG</h1>
+      </nav>
+      <div class="w-full px-16 flex justify-evenly items-center mt-20">
+        <div class="w-[90%] h-[70%] flex-wrap flex justify-evenly items-center">
+          <div class="w-64 p-3 mt-5">
+            <h1 class="text-xl">Amplify your blockchain team</h1>
+            <img src="images/chairPlant.jpg" class="w-full h-80 mt-5" />
+            <h1 class="mt-5">
+              JUNE 01, 2020 ADMIN <i class="fa-solid fa-comment"></i> 3
+            </h1>
+            <p class="text-gray-400 mt-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+              tempora.
+            </p>
+          </div>
+          <div class="w-64 mt-5 p-3">
+            <h1 class="text-xl">Amplify your blockchain team</h1>
+            <img src="images/paper.webp" class="w-full h-80 mt-5" />
+            <h1 class="mt-5">
+              JUNE 01, 2020 ADMIN <i class="fa-solid fa-comment"></i> 3
+            </h1>
+            <p class="text-gray-400 mt-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+              tempora.
+            </p>
+          </div>
+          <div class="w-64 mt-5 0 p-3">
+            <h1 class="text-xl">Amplify your blockchain team</h1>
+            <img src="images/keyboard.webp" class="w-full h-80 mt-5" />
+            <h1 class="mt-5">
+              JUNE 01, 2020 ADMIN <i class="fa-solid fa-comment"></i> 3
+            </h1>
+            <p class="text-gray-400 mt-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+              tempora.
+            </p>
+          </div>
+          <div class="w-64 mt-5 p-3">
+            <h1 class="text-xl">Amplify your blockchain team</h1>
+            <img src="images/chairPlant.jpg" class="w-full h-80 mt-5" />
+            <h1 class="mt-5">
+              JUNE 01, 2020 ADMIN <i class="fa-solid fa-comment"></i> 3
+            </h1>
+            <p class="text-gray-400 mt-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+              tempora.
+            </p>
+          </div>
+          <div class="w-64 p-3 mt-5">
+            <h1 class="text-xl">Amplify your blockchain team</h1>
+            <img src="images/chairPlant.jpg" class="w-full h-80 mt-5" />
+            <h1 class="mt-5">
+              JUNE 01, 2020 ADMIN <i class="fa-solid fa-comment"></i> 3
+            </h1>
+            <p class="text-gray-400 mt-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+              tempora.
+            </p>
+          </div>
+          <div class="w-64 mt-5 p-3">
+            <h1 class="text-xl">Amplify your blockchain team</h1>
+            <img src="images/paper.webp" class="w-full h-80 mt-5" />
+            <h1 class="mt-5">
+              JUNE 01, 2020 ADMIN <i class="fa-solid fa-comment"></i> 3
+            </h1>
+            <p class="text-gray-400 mt-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+              tempora.
+            </p>
+          </div>
+          <div class="w-64 mt-5 0 p-3">
+            <h1 class="text-xl">Amplify your blockchain team</h1>
+            <img src="images/keyboard.webp" class="w-full h-80 mt-5" />
+            <h1 class="mt-5">
+              JUNE 01, 2020 ADMIN <i class="fa-solid fa-comment"></i> 3
+            </h1>
+            <p class="text-gray-400 mt-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+              tempora.
+            </p>
+          </div>
+          <div class="w-64 mt-5 p-3">
+            <h1 class="text-xl">Amplify your blockchain team</h1>
+            <img src="images/chairPlant.jpg" class="w-full h-80 mt-5" />
+            <h1 class="mt-5">
+              JUNE 01, 2020 ADMIN <i class="fa-solid fa-comment"></i> 3
+            </h1>
+            <p class="text-gray-400 mt-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+              tempora.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- buttons area -->
+    <div class="w-full flex justify-center items-center mt-20">
+      <button class="w-14 h-14 rounded-full hover:bg-red-600 hover:text-white">
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+      <button class="w-14 h-14 rounded-full bg-red-600 text-white">1</button>
+      <button class="w-14 h-14 rounded-full hover:bg-red-600 hover:text-white">
+        2
+      </button>
+      <button class="w-14 h-14 rounded-full hover:bg-red-600 hover:text-white">
+        3
+      </button>
+      <button class="w-14 h-14 rounded-full hover:bg-red-600 hover:text-white">
+        4
+      </button>
+      <button class="w-14 h-14 rounded-full hover:bg-red-600 hover:text-white">
+        5
+      </button>
+      <button class="w-14 h-14 rounded-full hover:bg-red-600 hover:text-white">
+        <i class="fa-solid fa-angle-right"></i>
+      </button>
+    </div>
+
+    <!-- footer -->
+    <footer
+      id="aboutFooter"
+      class="w-full bg-black mt-56 p-10 py-10 flex justify-center items-center"
+    >
+      <div class="h-[80%] mt-10 p-5 flex justify-evenly items-center flex-wrap">
+        <div class="w-48 p-5">
+          <h1 class="text-white text-xl">AOV</h1>
+          <p class="mt-10 text-gray-400">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, dicta.
+          </p>
+          <div class="w-full flex justify-evenly items-center mt-10">
+            <a
+              href="index.html"
+              class="p-2 rounded-full bg-gray-500 text-center"
+              ><i class="fa-brands fa-twitter text-gray-400"></i
+            ></a>
+            <a
+              href="index.html"
+              class="p-2 rounded-full bg-gray-500 text-center"
+              ><i class="fa-brands fa-facebook-f text-gray-400"></i
+            ></a>
+            <a
+              href="index.html"
+              class="p-2 rounded-full bg-gray-500 text-center"
+              ><i class="fa-brands fa-instagram text-gray-400"></i
+            ></a>
+          </div>
+        </div>
+        <div class="w-48 p-5">
+          <h1 class="text-xl text-white">Community</h1>
+          <div class="mt-10 w-full flex items-center">
+            <i class="fa-solid fa-angle-right text-gray-400"></i>
+            <h1 class="text-gray-400 ml-2">projects</h1>
+          </div>
+          <div class="mt-2 w-full flex items-center">
+            <i class="fa-solid fa-angle-right text-gray-400"></i>
+            <h1 class="text-gray-400 ml-2">Team</h1>
+          </div>
+          <div class="mt-2 w-full flex items-center">
+            <i class="fa-solid fa-angle-right text-gray-400"></i>
+            <h1 class="text-gray-400 ml-2">Reviews</h1>
+          </div>
+          <div class="mt-2 w-full flex items-center">
+            <i class="fa-solid fa-angle-right text-gray-400"></i>
+            <h1 class="text-gray-400 ml-2">FAQs</h1>
+          </div>
+        </div>
+        <div class="w-48 p-5">
+          <h1 class="text-white text-xl">About Us</h1>
+          <div class="mt-10 w-full flex items-center">
+            <i class="fa-solid fa-angle-right text-gray-400"></i>
+            <h1 class="text-gray-400 ml-2">Our Story</h1>
+          </div>
+          <div class="mt-2 w-full flex items-center">
+            <i class="fa-solid fa-angle-right text-gray-400"></i>
+            <h1 class="text-gray-400 ml-2">Meet the Team</h1>
+          </div>
+          <div class="mt-2 w-full flex items-center">
+            <i class="fa-solid fa-angle-right text-gray-400"></i>
+            <h1 class="text-gray-400 ml-2">Careers</h1>
+          </div>
+        </div>
+        <div class="w-48 p-5">
+          <h1 class="text-xl text-white">Company</h1>
+          <div class="mt-10 w-full flex items-center">
+            <i class="fa-solid fa-angle-right text-gray-400"></i>
+            <h1 class="text-gray-400 ml-2">About Us</h1>
+          </div>
+          <div class="mt-2 w-full flex items-center">
+            <i class="fa-solid fa-angle-right text-gray-400"></i>
+            <h1 class="text-gray-400 ml-2">Press</h1>
+          </div>
+          <div class="mt-2 w-full flex items-center">
+            <i class="fa-solid fa-angle-right text-gray-400"></i>
+            <h1 class="text-gray-400 ml-2">Contact</h1>
+          </div>
+          <div class="mt-2 w-full flex items-center">
+            <i class="fa-solid fa-angle-right text-gray-400"></i>
+            <h1 class="text-gray-400 ml-2">Careers</h1>
+          </div>
+        </div>
+        <div class="w-48 p-5">
+          <h1 class="font-semibold text-white">Have a Question?</h1>
+          <div class="w-full flex mt-10">
+            <i class="fa-solid fa-map text-gray-400"></i>
+            <p class="text-gray-400 ml-5">
+              203 Fake St. Mountain View, San Francisco, California, USA
+            </p>
+          </div>
+          <div class="w-full flex mt-10">
+            <i class="fa-solid fa-phone text-gray-400"></i>
+            <p class="text-gray-400 ml-5 text-sm">+2 392 3929 210</p>
+          </div>
+          <div class="w-full flex mt-10">
+            <i class="fa-solid fa-envelope text-gray-400"></i>
+            <p class="text-gray-400 ml-5 text-xs">info@yourdomain.com</p>
+          </div>
+        </div>
+        <div class="w-full flex justify-center mt-10">
+          <h1 class="text-white">
+            Copyright ©2024 All rights reserved | This template is made with
+            <i class="fa-solid fa-heart"></i> by<span class="text-red-500">
+              Colorlib.</span
+            >
+          </h1>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="gsap.js"></script>
+    <script src="aboutscript.js"></script>
+  </body>
+</html>
